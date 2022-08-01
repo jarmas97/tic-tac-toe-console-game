@@ -8,6 +8,10 @@ public class Grid {
     }
 
     public void setField(int index, String value) {
-        fields[(index - 1)] = value;
+        if (!(fields[index - 1].equals(" "))) {
+            System.out.println("Wrong field!");
+        } else {
+            fields[(index - 1)] = value;
+        }
     }
 }

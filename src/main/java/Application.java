@@ -13,14 +13,14 @@ public class Application {
 
             System.out.print("PLAYER 'X' Pick a field (1-9): ");
             String inputX = scanner.nextLine();
-            gameManager.applyMovement(inputX, Players.X);
+            gameManager.applyMovement(inputX, Player.X);
             if (gameManager.isGameOver()) {
                 break;
             }
 
             System.out.print("PLAYER 'O' Pick a field (1-9): ");
             String inputO = scanner.nextLine();
-            gameManager.applyMovement(inputO, Players.O);
+            gameManager.applyMovement(inputO, Player.O);
 
         }
         gameManager.showWinner();

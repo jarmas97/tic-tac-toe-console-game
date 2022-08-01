@@ -1,4 +1,4 @@
-public enum Fields {
+public enum Field {
     F1,
     F2,
     F3,
@@ -7,5 +7,5 @@ public enum Fields {
     F6,
     F7,
     F8,
-    F9;
+    F9
 }
